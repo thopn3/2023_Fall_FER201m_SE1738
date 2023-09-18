@@ -52,10 +52,11 @@ for (const e of students) {
 // Bài tập:
 /*
     Viết các hàm thực hiện các chức năng trên mảng 'students':
-    - Thêm 1 sinh viên vào mảng
+    - Thêm 1 sinh viên vào mảng và Hiển thị
     - In danh sách các sinh viên 
     - Tìm và in ra danh sách các sinh viên có tên bắt đầu bởi từ khóa cần tìm
     - Sửa đổi email của sinh viên theo id được cung cấp và in danh sách sau các sinh viên
     - Sắp xếp và hiển thị danh sách sinh viên theo thứ tự tăng dần theo tên, và giảm dần theo id
       (nếu trùng tên)
+    - Loại bỏ sinh viên theo id
 */
