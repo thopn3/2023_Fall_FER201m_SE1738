@@ -27,7 +27,8 @@ console.log(student);
 const students = [
     {"id": 1, "name": "John", "email":"john@gmail.com"},
     {"id": 2, "name": "Mary", "email":"mary@gmail.com"},
-    {"id": 3, "name": "Tom", "email":"tom@gmail.com"}
+    {"id": 3, "name": "Tom", "email":"tom@gmail.com"},
+    {"id": 4, "name": "John", "email": "john1@gmail.com"}
 ]
 
 // Thêm 1 phần tử vào mảng
@@ -49,8 +50,16 @@ for (const e of students) {
     console.log(`${e.id}, ${e.name}, ${e.email}`);
 }
 
-// Bài tập:
+// Bài tập: Javascript ES6
 /*
+    Cho 1 mảng có cấu trúc sau:
+    const students = [
+        {"id": 1, "name": "John", "email":"john@gmail.com"},
+        {"id": 2, "name": "Mary", "email":"mary@gmail.com"},
+        {"id": 3, "name": "Tom", "email":"tom@gmail.com"},
+        {"id": 4, "name": "John", "email": "john1@gmail.com"}
+    ]
+
     Viết các hàm thực hiện các chức năng trên mảng 'students':
     - Thêm 1 sinh viên vào mảng và Hiển thị
     - In danh sách các sinh viên 
