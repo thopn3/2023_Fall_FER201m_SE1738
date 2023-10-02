@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+</body>
+<script type="text/babel">
+    // Dung DOM de tao element
+    const h1DOM = document.createElement('h1')
+    h1DOM.className = 'heading1'
+    h1DOM.textContent = 'Create a new Element by DOM'
+    let container = document.getElementById('root')
+    container.appendChild(h1DOM)
+
+    // Dung React de tao element
+    // createElement(type, props, children)
+    const h1React = React.createElement(
+        'h1',
+        { className: 'heading1', id: 'H1' },
+        'Create a new Element by React'
+    )
+    // Return: <h1 class='heading1' id='H1'>Create a new Element by React</h1>
+
+    /**
+     * <div class='item'>
+     *  <h1 class='item-title'>Category 1</h1>
+     *  <ul>
+     *      <li class='item-product'>Product 1</li>
+     *      <li class='item-product'>Product 2</li>
+     *  </ul>
+     * </div>
+     */
+    // Yeu cau: Tao ra 1 element bang React 
+
+    const item = React.createElement(
+        'div',
+        { className: 'item' },
+        React.createElement(
+            'h1',
+            { className: 'item-title' },
+            'Category 1'
+        ),
+        React.createElement(
+            'ul',
+            null,
+            React.createElement(
+                'li',
+                { className: 'item-product' },
+                'Product 1'
+            ),
+            React.createElement(
+                'li',
+                { className: 'item-product' },
+                'Product 2'
+            )
+        )
+    )
+
+    // Su dung JSX de dinh nghia lai 'item'
+    const item1 = (
+        <div className='item'>
+            <h1 className='item-title'>Category 1</h1>
+            <ul>
+                <li className='item-product'>Product 1</li>
+                <li className='item-product'>Product 2</li>
+            </ul>
+        </div>
+    )
+
+    // Ket noi Virtual DOM voi DOM tren trinh duyet web
+    const root = ReactDOM.createRoot(document.getElementById('root'))
+    root.render(item1)
+</script>
+
+</html>
