@@ -1,16 +1,82 @@
 {
-    "categories": [
-        {"id": 1, "name": "Smart phone"},
-        {"id": 2, "name": "Electric"}
-    ],
-    "suppliers": [
-        {"id": 1, "name": "FPT", "address": "Cầu Giấy"},
-        {"id": 2, "name": "SunHouse", "address": "Hai Bà Trưng"}
-    ],
-    "products": [
-        {"id": 1, "name": "Iphone 15 Pro", "price": 10, "catId": 1, "supId": 1},
-        {"id": 2, "name": "Iphone 15 Pro Max", "price": 15, "catId": 1, "supId": 1},
-        {"id": 3, "name": "Samsung Note", "price": 11, "catId": 1, "supId": 1},
-        {"id": 4, "name": "Mama", "price": 9, "catId": 2, "supId": 1}
-    ]
+  "categories": [
+    {
+      "id": 1,
+      "name": "Smart phone"
+    },
+    {
+      "id": 2,
+      "name": "Electric"
+    }
+  ],
+  "suppliers": [
+    {
+      "id": 1,
+      "name": "FPT",
+      "address": "Cầu Giấy"
+    },
+    {
+      "id": 2,
+      "name": "SunHouse",
+      "address": "Hai Bà Trưng"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Iphone 15 Pro",
+      "price": 10,
+      "catId": 1,
+      "supId": 1
+    },
+    {
+      "id": 2,
+      "name": "Iphone 15 Pro Max",
+      "price": 15,
+      "catId": 1,
+      "supId": 1
+    },
+    {
+      "id": 3,
+      "name": "Samsung Note",
+      "price": 11,
+      "catId": 1,
+      "supId": 1
+    },
+    {
+      "id": 4,
+      "name": "Mama",
+      "price": 9,
+      "catId": 2,
+      "supId": 1
+    },
+    {
+      "name": "BBBB",
+      "price": 100,
+      "catId": 1,
+      "supId": 2,
+      "id": 5
+    },
+    {
+      "name": "CCCC",
+      "price": 12,
+      "catId": 1,
+      "supId": 1,
+      "id": 6
+    },
+    {
+      "name": "asasdasd",
+      "price": 23,
+      "catId": 1,
+      "supId": 1,
+      "id": 7
+    },
+    {
+      "name": "dfgdfg",
+      "price": null,
+      "catId": 1,
+      "supId": 1,
+      "id": 8
+    }
+  ]
 }
